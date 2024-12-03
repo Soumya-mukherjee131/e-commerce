@@ -1,0 +1,96 @@
+.container{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.main{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.part1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.part2{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Customize Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #333 !important;
+    font-size: 20px !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    background-color: #f1f1f1 !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Hover Effects for Navigation */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Adjust icon size within buttons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 16px !important;
+}
+
+/* Space between pagination and slides */
+.swiper-pagination {
+    margin-top: 15px; /* Adjust this value as needed */
+}
+
+@media (max-width: 640px) {
+    .part1 {
+      padding: 10px;
+    }
+    .part2 {
+      padding: 5px;
+    }
+  }
+  
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .part1 {
+      padding: 20px;
+    }
+    .part2 {
+      padding: 10px;
+    }
+  }

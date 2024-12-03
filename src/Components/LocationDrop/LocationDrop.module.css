@@ -1,0 +1,255 @@
+/* Button and Dropdown */
+.countryDropdown {
+  width: 180px;
+  height: 45px;
+  border: 1px solid rgba(190, 187, 187, 0.45) !important;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+  text-align: left;
+  background-color: #ffffff !important;
+  transition: box-shadow 0.3s ease;
+}
+.countryDropdown:focus {outline: none;}
+.countryDropdown:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+.label {
+  font-size: 12px;
+  color: #888;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.mlAuto {
+  margin-left: auto;
+  color: #777;
+}
+
+/* Modal */
+.locationModal .MuiPaper-elevation {
+  padding: 25px;
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modalTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.modalText {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Close Button */
+.close {
+  position: absolute !important;
+  top: 10px; /* Adjust top distance for proper placement */
+  right: 10px; /* Adjust right distance to align with modal edge */
+  background-color: transparent;
+  color: #666;
+  border: none;
+  font-size: 22px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.close:focus{outline: none;}
+.close:hover {
+  background-color: #eee;
+}
+
+/* Search Bar */
+.headerSearch {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  border: 1px solid rgba(128, 128, 128, 0.15);
+  border-radius: 7px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.headerSearch input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.headerSearch button {
+  background-color: transparent;
+  color: #555;
+}
+
+/* Country List */
+.countryList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+.listItem:hover {
+  background-color: #f8f8f8;
+}
+
+.deliveryCharge {
+  background-color: #90f1f5;
+  color: #090527;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Active State */
+.active {
+  background-color: #e8e8e8;
+  color: #333;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .countryDropdown {
+    width: 180px;
+    height: 45px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .modalTitle {
+    font-size: 16px;
+  }
+
+  .modalText {
+    font-size: 13px;
+  }
+
+  .locationModal .MuiPaper-elevation {
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .close {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .headerSearch {
+    height: 45px;
+    padding: 0 8px;
+  }
+
+  .headerSearch input {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .countryDropdown {
+    width: 200px;
+    height: 45px;
+    padding: 6px;
+    font-size: 13px;
+  }
+
+  .modalTitle {
+    font-size: 15px;
+  }
+
+  .modalText {
+    font-size: 12px;
+  }
+
+  .locationModal .MuiPaper-elevation {
+    max-width: 90%;
+    padding: 18px;
+  }
+
+  .close {
+    font-size: 18px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .headerSearch {
+    height: 40px;
+    padding: 0 6px;
+  }
+
+  .headerSearch input {
+    font-size: 12px;
+  }
+
+  .deliveryCharge {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 445px) {
+  .close {
+    top: 0px; /* Adjust top distance for proper placement */
+    right: 3px; /* Adjust right distance to align with modal edge */
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+
+  }
+}
+@media (max-width: 360px) {
+  .close {
+    top: -2px; 
+    right: -10px; 
+    font-size: 16px;
+    width: 10px;
+    height: 20px;
+    background: transparent;
+  }
+}

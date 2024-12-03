@@ -1,0 +1,159 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #042D25;
+    background: linear-gradient(180deg, #042D25 40%, #020b3d );
+}
+.part1
+{
+    width: 40%;
+    margin: 5px;
+    padding: 5px 7px ;
+}
+.texts {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background: transparent;
+    border-radius: 8px;
+  }
+  
+  .main-heading {
+    font-size: 2rem; /* Adjust font size as needed */
+    background: linear-gradient(90deg, #ff5e35, #ffffff); /* Adds a warm gradient */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the gradient show through the text */
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a slight shadow for depth */
+    animation: fadeIn 1.5s ease-in-out; /* Animation effect */
+    
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+  
+  .typewriter{
+    font-size: 1.2rem;
+    color: #50dbee !important;
+    margin: 10px 0;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .sub-text p {
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  .sub-text{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+  }
+  .herobtn {
+    margin-top: 20px;
+  }
+
+  .herobtn button {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .herobtn button:hover {
+    background-color: #0056b3;
+  }
+.part2{
+    width: 50%;
+    /* border: 1px solid blue; */
+    margin: 5px;
+}
+/* Swiper container styling */
+.swiper_container {
+  height: auto;
+  max-width: 100%;
+  padding: 2rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 85%;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.slider-controler .swiper-button-prev,
+.slider-controler .swiper-button-next {
+  color: #007bff;
+  font-size: 1.8rem;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.slider-controler .swiper-pagination {
+  bottom: -20px;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #007bff;
+  opacity: 1;
+}
+
+@media (max-width: 990px) {
+  .main {
+      flex-direction: column;
+  }
+  .part1, .part2 {
+      width: 100%;
+      margin: 10px 0;
+  }
+  .swiper_container {
+      height: 250px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
