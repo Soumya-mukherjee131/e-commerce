@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React, {useState} from 'react'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import './Navbar.css'
 function BasicExample() {
@@ -16,7 +16,6 @@ function BasicExample() {
   };
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
-      {/* <Container> */}
       <div className="navpart1">
       <NavDropdown title="All categories" id="basic-nav-dropdown" style={{paddingLeft: '20px'}} >
         <NavDropdown title="Category 1" id="basic-nav-dropdown" className="dropdown-submenu">
@@ -56,8 +55,8 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
       <div className="navpart2">
           <Nav className=" nav1 me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Blogs</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/blog">Blogs</Nav.Link>
             <NavDropdown title="Products" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Categories</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Categories</NavDropdown.Item>
@@ -76,16 +75,15 @@ function BasicExample() {
               <NavDropdown.Item href="#action/3.3">Categories</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Categories</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#home">About</Nav.Link>
-            <Nav.Link href="#home">Contact</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
           <Nav className=" nav2 ml-5">
-            <button className="button mr-3">Sign Up</button>
-            <button className="button">Log In</button>
+              <Link to="/signup" className="button mr-3">Sign Up</Link>
+              <Link to="/login" className="button mr-3">Log In</Link>           
           </Nav>
           </Nav>
           </div>
         </Navbar.Collapse>
-      {/* </Container> */}
     </Navbar>
   );
 }

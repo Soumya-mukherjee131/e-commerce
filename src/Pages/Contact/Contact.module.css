@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+  }
+  
+  .contactBox {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .infoContainer {
+    flex: 1;
+    background: #f0f4f8;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .infoContainer h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .infoContainer p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .info {
+    margin-top: 20px;
+  }
+  
+  .infoItem {
+    margin-bottom: 15px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .infoItem i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #4facfe;
+  }
+  
+  .formContainer {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .formGroup textarea {
+    resize: none;
+  }
+  
+  .submitButton {
+    padding: 12px;
+    background: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submitButton:hover {
+    background: #00f2fe;
+  }
+  
+  @media (max-width: 768px) {
+    .contactBox {
+      flex-direction: column;
+    }
+  
+    .infoContainer,
+    .formContainer {
+      padding: 20px;
+    }
+  }
+  
